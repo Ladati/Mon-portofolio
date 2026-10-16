@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portofolio</title>
+
+    <!-- Police Poppins (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Mon fichier de style -->
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+    <header>
+
+        <div class = "logo">
+            Mon portofolio
+        </div>
+
+        <nav>
+            <a href = "#home"> Accueil</a>
+            <a href = "#about"> A propos</a>
+            <a href = "#Competences"> Compétences</a>
+            <a href = "#Projets"> Projets</a>
+            <a href = "#Contact"> Contact</a>
+
+        </nav>
+
+    </header> 
+    
+    <!-- Profil-->
+
+    <section id = "home" class = "hero">
+
+        <div class = "hero-content">
+
+            <img src = "mon_image.jpg" alt = "Ma photo" class="photo">
+
+            <h1> Hadidja Ahamada Soyad </h1>
+            <h2> Data Scientist full stack </h2>
+            <p> Je fais des analyses statistiques et je met en place des modèles que je developpe sur web accessible à tous </p>
+            
+            
+            <button> Prendre rendez-vous </button>
+            
+        </div>
+    </section>
+
+    <!-- About -->
+
+    <section id = "about">
+        
+        <h2> A propos de moi </h2>
+
+        <p>
+            Je travail avec les chiffres et transforme les données en information utile 
+            pour aider à la prise de décision. Mon objectif est de devenir une data scientist full stack,
+            pour combiner mes compétences de data scientist et de developpeur et deployer des modèles à des fin d'utilisation 
+            dans chaque domaine. Je suis curieuse et j'aime apprendre de nouvelles technologies.
+         
+        </p>
+
+    </section>
+
+    <section class = "section" id = "Competences">
+        <h2> Compétences </h2>
+        <div class = "competences">
+
+            <div class = "competences">
+                <p>Python</p>
+                <div class = "barre"><div class = "niveau" style = "width: 85%"></div></div>
+            </div>
+
+            <div class = "competence">
+                <p>Statistiques et économétrie</p>
+                <div class = "barre"><div class = "niveau1" style = "width : 90%"></div></div>
+            </div>
+
+            <div class = "competence">
+                <p>Machine learning</p>
+                <div class = "barre"><div class = "niveau2" style = "width : 60%"></div></div>
+            </div>
+
+            <div class="competence">
+               <p>Rstudio</p>
+               <div class="barre"><div class="niveau3" style="width: 80%"></div></div>
+            </div>
+
+            <div class="competence">
+               <p>SQL</p>
+               <div class="barre"><div class="niveau4" style="width: 60%"></div></div>
+            </div>
+
+            <div class="competence">
+               <p>Git</p>
+               <div class="barre"><div class="niveau5" style="width: 60%"></div></div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="section4" id = "Projets">
+        <h2> Mes projets </h2>
+        <div class = "cartes">
+            <div class="carte">
+                <h3>Prévision de l'inflation</h3>
+                <p> Comparaison entre SARIMA et XGBoost pour prévoir l'inflation.</p>
+                <a href = "https://github.com/Ladati" class = "lien"> Voir sur GitHub </a>
+            </div>
+
+            <div class = "carte">
+                <h3>SantéRisk SN </h3>
+                <p> Atlas de l'accès aux soins au Sénégal, avec Streamlit avec des données simulées.</p>
+                <a href = "https://github.com/Ladati" class = "lien"> Voir sur GitHub </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id = "Contact">
+
+        <h2>Contactez-nous</h2>
+        <form action = "formulaire">
+
+            <input type = "text" name = "nom" placeholder = "Nom"  >
+            <input type = "email" placeholder = "Email">
+            <textarea placeholder="Votre message"></textarea>
+            <button type = "submit"> Envoyer </button>
+        </form>
+
+    </section>
+
+    <!--Foter-->
+
+    <footer>
+        <p>© 2026 Portofolio | Tous droits réservés</p>
+    </footer>
+
+     
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,268 @@
+
+/* Réglages généraux de la page */
+body {
+    font-family: 'Poppins', sans-serif; /* police moderne pour tout le site */
+    margin: 0;                          /* enlève la marge blanche autour de la page */
+}
+
+html {
+    scroll-behavior: smooth; /* la page glisse doucement quand on clique sur le menu */
+}
+
+/* Header */
+
+header{
+    /* Menu qui reste en haut quand on descend la page */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.85); /* noir un peu transparent */
+    backdrop-filter: blur(10px);           /* léger flou derrière le menu */
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight : bold;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    margin-left: 20px;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    padding: 50px;
+    text-align: center;
+    background-color: #222;
+    color : white;
+    border: solid 1px black;
+    margin: auto;
+}
+
+.photo {
+    border-radius : 50%;
+    height : 180px;
+    object-fit: cover;
+    width: 180px;
+}
+
+.hero button {
+    display: inline-block;
+    background-color: gold;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7; /* plus d'espace entre les lignes */
+}
+
+/* Plus d'espace en haut et en bas des sections */
+#Competences, #Contact {
+    padding: 60px 20px;
+}
+
+#Competences h2 {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+
+.competences {
+    max-width: 500px;
+    margin : 0 auto;
+    text-align : left;
+}
+
+.competence p {
+    margin: 0 0 5px 0;
+}
+
+.barre {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.niveau {
+    height: 100%;
+    background-color: gold;
+    border-radius: 10px;
+}
+
+.niveau1 {
+    height: 100%;
+    background-color: lightskyblue;
+    border-radius: 10px;
+}
+
+.niveau2 {
+    height: 100%;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+.niveau3 {
+    height: 100%;
+    background-color: rosybrown;
+    border-radius: 10px;
+}
+
+.niveau4 {
+    height: 100%;
+    background-color: lightseagreen;
+    border-radius: 10px;
+}
+
+.niveau5 {
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.section4{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cartes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.carte {
+    border-style: outset;
+    background-color: wheat;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+}
+
+.lien {
+    color: gold;
+}
+
+/* Contact */
+#Contact {
+    text-align: center;
+}
+
+#Contact h2{
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin : auto;
+     
+
+    display: flex;
+    flex-direction: column;
+    gap : 15px
+}
+
+input, 
+textarea {
+    padding: 12px;
+    border : 1px solid #ccc;
+}
+
+form button {
+    background-color: #222;
+    color: white;
+
+    border: none;
+    padding: 15px;
+
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    background-color: #222;
+    color : white;
+
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Effets quand on passe la souris */
+
+nav a {
+    transition: color 0.3s; /* changement de couleur en douceur */
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero button {
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: white;
+    transform: translateY(-3px); /* le bouton se soulève un peu */
+}
+
+.carte {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-8px); /* la carte se soulève */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+form button {
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
